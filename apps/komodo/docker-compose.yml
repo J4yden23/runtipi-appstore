@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  komodo:
+    image: komodoplatform/komodo
+    container_name: komodo
+    ports:
+      - "7770-7777:7770-7777"
+    volumes:
+      - komodo_data:/home/komodo/.komodo
+    restart: always
+
+volumes:
+  komodo_data:
