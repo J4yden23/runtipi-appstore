@@ -1,17 +1,44 @@
 {
-  "name": "My super app",
-  "id": "my-super-app",
+  "$schema": "../../apps-config-schema.json",
+  "name": "Komodo",
+  "port": 9120,
   "available": true,
-  "short_desc": "Its an awesome app!",
-  "author": "me",
-  "port": 8685,
-  "categories": ["development", "ai"],
-  "description": "This app does x thing and y thing.",
-  "tipi_version": 1,
-  "version": "v1.5.7",
-  "source": "https://github.com/me/my-awesome-app",
   "exposable": true,
-  "supported_architectures": ["arm64", "amd64"],
-  "created_at": 1724134338800,
-  "updated_at": 1724134338800
+  "id": "komodo",
+  "tipi_version": 11,
+  "version": "latest",
+  "categories": ["utilities", "development"],
+  "description": "Komodo is a secure, stable, and interoperable blockchain platform with a stack-oriented docker compose manager.",
+  "short_desc": "Docker compose stack manager with blockchain integration",
+  "author": "mbecker20",
+  "source": "https://github.com/mbecker20/komodo",
+  "form_fields": [
+    {
+      "id": "PASSKEY",
+      "label": "Passkey",
+      "description": "Secure passkey to authenticate between Core/Periphery",
+      "default": "changeme_random_passkey",
+      "type": "password",
+      "required": true
+    },
+    {
+      "id": "DB_USERNAME",
+      "label": "Database Username",
+      "description": "MongoDB root username",
+      "default": "admin",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "DB_PASSWORD",
+      "label": "Database Password",
+      "description": "MongoDB root password",
+      "default": "admin",
+      "type": "password",
+      "required": true
+    }
+  ],
+  "supported_architectures": ["amd64", "arm64"],
+  "created_at": 1705435264,
+  "updated_at": 1705435264
 }
