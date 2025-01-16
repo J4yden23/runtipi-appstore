@@ -1,5 +1,5 @@
 {
-  "$schema": "../../apps-config-schema.json",
+  "$schema": "../apps-config-schema.json",
   "name": "Komodo",
   "port": 9120,
   "available": true,
